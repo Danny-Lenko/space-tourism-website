@@ -1,6 +1,6 @@
 # Space tourism website
 
-![Design preview for the Space tourism website coding challenge](./preview.jpg)
+![Design preview for the Space tourism website coding challenge](./assets/preview.jpg)
 
 ## Welcome! 👋
 ## Table of contents

@@ -84,6 +84,9 @@ select {
    max-width: 1300px;
    margin: 0 auto;
 }
+.mar-bot1 {
+   margin-bottom: 1rem;
+}
 
 .sr-only {
    position: absolute;

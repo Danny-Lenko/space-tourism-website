@@ -1,12 +1,29 @@
-
-/* ======================== 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;1,400&family=Barlow:ital,wght@0,400;0,700;1,400&family=Bellefair&display=swap');
+/* ========================
       custom properties
 ======================== */
 :root {
    --clr-dark: 230 35% 7%;
    --clr-light: 231 77% 90%;
    --clr-white: 0 0% 100%;
+
+   /* font-families */
+   --ff-bel: "Bellefair", serif;
+   --ff-bar-con: "Barlow Condensed", sans-serif;
+   --ff-bar: "Barlow", sans-serif;
+
+   font-size: .625rem;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
 /* =============================
       css reset settings
 ============================== */
@@ -38,6 +55,10 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+   font-family: var(--ff-bar);
+   font-size: 1.8rem;
+   background-color: hsl( var(--clr-dark) );
+   color: hsl( var(--clr-white) );
 }
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -73,19 +94,25 @@ select {
 ============================== */
 .flex {
    display: flex;
-   gap: var(--gap, 1rem);
+   gap: var(--gap, 1.6rem);
 }
 .grid {
    display: grid;
-   gap: var(--gap, 1rem);
+   gap: var(--gap, 1.6rem);
 }
 .container {
    padding: 0 2em;
-   max-width: 1300px;
+   max-width: 200rem;
    margin: 0 auto;
 }
-.mar-bot1 {
-   margin-bottom: 1rem;
+.mar-bot16 {
+   margin-bottom: 1.6rem;
+}
+.mar-bot32 {
+   margin-bottom: 3.2rem;
+}
+.mar-bot48 {
+   margin-bottom: 4.8rem;
 }
 
 .sr-only {
@@ -111,3 +138,37 @@ select {
 .txt-white { color: hsl( var(--clr-white) );}
 
 .bg-opacity20 { background-color: hsl( var(--clr-light) / .2 );}
+.txt-white-aplha25 {color: rgba(255, 255, 255, .25)}
+
+/* typography */
+
+.ff-bel { font-family: var(--ff-bel); } 
+.ff-bar-con { font-family: var(--ff-bar-con); } 
+.ff-bar { font-family: var(--ff-bar); } 
+
+.let-spacing-1 { letter-spacing: 4.75px; } 
+.let-spacing-2 { letter-spacing: 2.7px; } 
+.let-spacing-3 { letter-spacing: 2.35px; } 
+
+.uppercase { text-transform: uppercase; }
+
+.fs-10 { font-size: 1rem }
+.fs-14 { font-size: 1.4rem }
+.fs-16 { font-size: 1.6rem }
+.fs-18 { font-size: 1.8rem }
+.fs-28 { font-size: 2.8rem }
+.fs-32 { font-size: 3.2rem }
+.fs-56 { font-size: 5.6rem }
+.fs-100 { font-size: 10rem }
+.fs-150 { font-size: 15rem }
+
+.fs-32,
+.fs-56,
+.fs-100,
+.fs-150 {
+   line-height: 1.1;
+}
+
+.fw-b {
+   font-weight: 700;
+}

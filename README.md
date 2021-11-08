@@ -40,6 +40,30 @@ To see how you can add code snippets, see below:
   color: papayawhip;
 }
 ```
+the .flow class to add space between children
+```html
+<div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
+</div>
+```
+```css
+.flow > *:not(:first-child) {
+  margin-top: var(--flow-space, 1rem);
+}
+```
+button <a></a> with modern css properties
+```html
+<a href="#" class="ff-bel fs-32 uppercase bg-white txt-dark large-button">Explore</a>
+```
+```css
+.large-button {
+  display: grid;
+  place-items: center;
+  padding: 0 2em;
+  aspect-ratio: 1;
+  text-decoration: none;
+  border-radius: 50%;
+}
+```
 ```js
 const proudOfThisFunc = () => {
   console.log('🎉')

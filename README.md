@@ -86,6 +86,23 @@ added an animated glow around the button
 }
 ```
 
+use of aria-selected property to add styles to active button
+```html
+<div class="tab-list underline flex" style="--gap: 14rem">
+    <button aria-selected="true" class="uppercase">Moon</button>
+    <button aria-selected="false" class="uppercase">Mars</button>
+    <button aria-selected="false" class="uppercase">Europa</button>
+</div>
+```
+```css
+.underline > .active,
+.underline > [aria-selected="true"] {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+```
+
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ### Continued development

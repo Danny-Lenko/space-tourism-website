@@ -105,6 +105,9 @@ select {
    max-width: 200rem;
    margin: 0 auto;
 }
+.mar-bot10 {
+  margin-bottom: 1rem;
+}
 .mar-bot16 {
    margin-bottom: 1.6rem;
 }
@@ -138,7 +141,7 @@ select {
 .txt-white { color: hsl( var(--clr-white) );}
 
 .bg-opacity20 { background-color: hsl( var(--clr-light) / .2 );}
-.txt-white-aplha25 {color: rgba(255, 255, 255, .25)}
+/* .txt-white-aplha25 {color: rgba(255, 255, 255, .25)} */
 
 /* typography */
 
@@ -171,4 +174,20 @@ select {
 
 .fw-b {
    font-weight: 700;
+}
+
+.line-h2 {
+  line-height: 2;
+}
+.sect-title {
+  font-size: 2.8rem;
+  font-family: var(--ff-bar-con);
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  margin-bottom: 4.8rem;
+}
+.sect-title > span {
+  color: rgba(255, 255, 255, .25);
+  font-weight: 700;
+  margin-right: 1rem;
 }

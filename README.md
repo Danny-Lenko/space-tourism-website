@@ -28,7 +28,20 @@
 
 ### What I learned
 
-the .flow class to add space between children
+the Utility Classes "gap" property to use between flex and grid elements (html customizable variable)
+
+```css
+.flex {
+   display: flex;
+   gap: var(--gap, 1.6rem);
+}
+.grid {
+   display: grid;
+   gap: var(--gap, 1.6rem);
+}
+```
+
+the .flow class to add space on top of children
 ```html
 <div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
 </div>
@@ -38,7 +51,8 @@ the .flow class to add space between children
   margin-top: var(--flow-space, 1rem);
 }
 ```
-button <a></a> with modern css properties
+
+"a" button with modern css properties
 ```html
 <a href="#" class="ff-bel fs-32 uppercase bg-white txt-dark large-button">Explore</a>
 ```
@@ -52,7 +66,25 @@ button <a></a> with modern css properties
   border-radius: 50%;
 }
 ```
-
+added an animated glow around the button
+```css
+.large-button::after {
+  content: '';
+  background: rgba(255, 255, 255, .15);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 500ms linear, transform 750ms ease-in-out;
+}
+.large-button:hover::after,
+.large-button:focus::after {
+  opacity: 1;
+  transform: scale(1.5);
+}
+```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 

@@ -105,6 +105,11 @@ select {
    max-width: 200rem;
    margin: 0 auto;
 }
+
+/* spacing settings */
+.flow > *:not(:first-child) {
+  margin-top: var(--flow-space, 1rem);
+}
 .mar-bot10 {
   margin-bottom: 1rem;
 }
@@ -117,6 +122,7 @@ select {
 .mar-bot48 {
    margin-bottom: 4.8rem;
 }
+/* end of spacing settings */
 
 .sr-only {
    position: absolute;
@@ -141,7 +147,6 @@ select {
 .txt-white { color: hsl( var(--clr-white) );}
 
 .bg-opacity20 { background-color: hsl( var(--clr-light) / .2 );}
-/* .txt-white-aplha25 {color: rgba(255, 255, 255, .25)} */
 
 /* typography */
 

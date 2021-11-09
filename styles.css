@@ -192,7 +192,7 @@ select {
   margin-bottom: 4.8rem;
 }
 .sect-title > span {
-  color: rgba(255, 255, 255, .25);
+  color: hsl( var(--clr-white) / .25 );
   font-weight: 700;
   margin-right: 1rem;
 }
@@ -214,7 +214,7 @@ select {
 }
 .large-button::after {
   content: '';
-  background: rgba(255, 255, 255, .15);
+  background: hsl( var(--clr-white) / .15 );
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -247,17 +247,17 @@ select {
 .underline > * {
   padding: var(--underline-gap, 1rem) 0;
   border: 0;
-  border-bottom: .2rem solid rgba(255, 255, 255, 0);
+  border-bottom: .2rem solid hsl( var(--clr-light) / 0 );
   cursor: pointer;
 }
 .underline > *:hover,
 .underline > *:focus {
-  border-color: rgba(255, 255, 255, .5);
+  border-color: hsl( var(--clr-white) / .5 );
 }
 .underline > .active,
 .underline > [aria-selected="true"] {
-  color: rgb(255, 255, 255);
-  border-color: rgb(255, 255, 255);
+  color: hsl( var(--clr-white) );
+  border-color: hsl( var(--clr-white) );
 }
 
 /* slider buttons */
@@ -265,15 +265,31 @@ select {
   border-radius: 50%;
   aspect-ratio: 1;
   border: 0;
-  background-color: rgba(255, 255, 255, .2);
+  background-color: hsl( var(--clr-white) / .2 );
   cursor: pointer;
 }
 .dot-indicators > *:hover,
 .dot-indicators > *:focus {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: hsl( var(--clr-white) / .5 );
 }
 .dot-indicators > [aria-selected="true"] {
-  background-color: rgb(255, 255, 255);
+  background-color: hsl( var(--clr-white) );
+}
+
+.nmbr-mod > * {
+  padding: 0 .8em;
+  display: block;
+  background: hsl( var(--clr-dark) );
+  border: 1px solid hsl( var(--clr-white) / .3 );
+}
+.nmbr-mod > *:hover,
+.nmbr-mod > *:focus {
+  border: 1px solid hsl( var(--clr-white) / .9 );
+  background: hsl( var(--clr-dark) );
+}
+.nmbr-mod > [aria-selected="true"] {
+  color: hsl( var(--clr-dark) );
+  background: hsl( var(--clr-white) );
 }
 /* end of slider buttons */
 

@@ -8,20 +8,34 @@
   <link rel="stylesheet" href="styles.css">
   <title>Space tourism website</title>
 </head>
-<body>
+<body class="home">
 
-  00 Home 
-  01 Destination
-  02 Crew
-  03 Technology
+  <header class="header flex container">
+    <div>
+      <img src="./assets/shared/logo.svg" alt="space tourism logo">
+    </div>
+    <nav class="header__nav">
+      <ul class="primary-navigation underline flex" style="--gap: 4rem">
+        <li class="active"><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span>00</span>Home</a></li>
+        <li><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span>01</span>Destination</a></li>
+        <li><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span>02</span>Crew</a></li>
+        <li><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span>02</span>Technology</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
+  <div class="space grid-container">
+    <div class="space__content">
+      <p class="fs-28 ff-bar-con uppercase let-spacing-1">So, you want to travel to space</p>
+      <p class="fs-150 ff-bel uppercase">Earth</p>
+      <p class="line-hei2">  Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>  
+    </div>
+    <div class="space__btn">
+      <a href="#" class="ff-bel fs-32 uppercase bg-white txt-dark large-button">Explore</a>
+    </div>
 
-  Explore
+  </div>
+  
 
 </body>
 </html>

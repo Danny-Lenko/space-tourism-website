@@ -12,8 +12,38 @@
    --ff-bar-con: "Barlow Condensed", sans-serif;
    --ff-bar: "Barlow", sans-serif;
 
+   /* font-sizes */
    font-size: .625rem;
+   --fs-10: 1rem;
+   --fs-14: 1.4rem;
+   --fs-16: 1.6rem;
+   --fs-18: 1.5rem;
+   --fs-28: 2.8rem;
+   --fs-32: 1.6rem;
+   --fs-56: 2.4rem;
+   --fs-100: 5.6rem;
+   --fs-150: clamp(8rem, 8vw + 1rem, 15rem);
 }
+
+@media (min-width: 560px) {
+  :root {
+      /* --fs-150: 15rem; */
+      --fs-100: 8rem;
+      --fs-56: 4rem;
+      --fs-32: 2.4rem;
+      --fs-28: 1.6rem;
+  }
+}
+
+@media (min-width: 720px) {
+  :root {
+      --fs-100: 10rem;
+      --fs-56: 5.6rem;
+      --fs-32: 3.2rem;
+      --fs-28: 2.8rem;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -59,6 +89,9 @@ body {
    font-size: 1.8rem;
    background-color: hsl( var(--clr-dark) );
    color: hsl( var(--clr-white) );
+
+   display: grid;
+   grid-template-rows: min-content 1fr;
 }
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -106,23 +139,31 @@ select {
    margin: 0 auto;
 }
 
-/* spacing settings */
+/* grid-container settings */
+.grid-container {
+  border: 5px solid limegreen;
+  display: grid;
+}
+@media (min-width: 720px) {
+  .grid-container {
+      column-gap: var(--container-gap, 4rem);
+      grid-template-columns: minmax(3rem, 1fr) repeat(2, minmax(0, 60rem)) minmax(3rem, 1fr);
+  }
+  
+  .grid-container > *:first-child {
+      grid-column: 2;
+      outline: 1px solid red;
+  }
+
+  .grid-container > *:last-child {
+      grid-column: 3;
+      outline: 1px solid yellow;
+  }
+}
+
 .flow > *:not(:first-child) {
   margin-top: var(--flow-space, 1rem);
 }
-.mar-bot10 {
-  margin-bottom: 1rem;
-}
-.mar-bot16 {
-   margin-bottom: 1.6rem;
-}
-.mar-bot32 {
-   margin-bottom: 3.2rem;
-}
-.mar-bot48 {
-   margin-bottom: 4.8rem;
-}
-/* end of spacing settings */
 
 .sr-only {
    position: absolute;
@@ -160,15 +201,15 @@ select {
 
 .uppercase { text-transform: uppercase; }
 
-.fs-10 { font-size: 1rem }
-.fs-14 { font-size: 1.4rem }
-.fs-16 { font-size: 1.6rem }
-.fs-18 { font-size: 1.8rem }
-.fs-28 { font-size: 2.8rem }
-.fs-32 { font-size: 3.2rem }
-.fs-56 { font-size: 5.6rem }
-.fs-100 { font-size: 10rem }
-.fs-150 { font-size: 15rem }
+.fs-10 { font-size: var(--fs-10); }
+.fs-14 { font-size: var(--fs-14); }
+.fs-16 { font-size: var(--fs-16); }
+.fs-18 { font-size: var(--fs-18); }
+.fs-28 { font-size: var(--fs-28); }
+.fs-32 { font-size: var(--fs-32); }
+.fs-56 { font-size: var(--fs-56); }
+.fs-100 { font-size: var(--fs-100); }
+.fs-150 { font-size: var(--fs-150); }
 
 .fs-32,
 .fs-56,
@@ -181,7 +222,7 @@ select {
    font-weight: 700;
 }
 
-.line-h2 {
+.line-hei2 {
   line-height: 2;
 }
 .sect-title {
@@ -203,7 +244,7 @@ select {
 
 /* large-button */
 .large-button {
-  display: grid;
+  display: inline-grid;
   place-items: center;
   padding: 0 2em;
   aspect-ratio: 1;

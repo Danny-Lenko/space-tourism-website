@@ -132,6 +132,12 @@ body {
   }
 }
 ```
+the clamp property (used on the bigest font-size)
+```css
+:root {
+  --fs-150: clamp(8rem, 8vw + 1rem, 15rem);
+}
+```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 

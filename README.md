@@ -112,7 +112,6 @@ body {
 
 /* grid-container settings */
 .grid-container {
-  border: 5px solid limegreen;
   display: grid;
 }
 @media (min-width: 720px) {
@@ -123,12 +122,10 @@ body {
   
   .grid-container > *:first-child {
       grid-column: 2;
-      outline: 1px solid red;
   }
 
   .grid-container > *:last-child {
       grid-column: 3;
-      outline: 1px solid yellow;
   }
 }
 ```

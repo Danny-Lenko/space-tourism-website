@@ -100,7 +100,37 @@ use of aria-selected property to add styles to active button
   color: rgb(255, 255, 255);
   border-color: rgb(255, 255, 255);
 }
+```
 
+The mobile-first grid-container based layout settings
+```css
+body {
+  min-height: 100vh;
+   display: grid;
+   grid-template-rows: min-content 1fr;
+}
+
+/* grid-container settings */
+.grid-container {
+  border: 5px solid limegreen;
+  display: grid;
+}
+@media (min-width: 720px) {
+  .grid-container {
+      column-gap: var(--container-gap, 4rem);
+      grid-template-columns: minmax(3rem, 1fr) repeat(2, minmax(0, 60rem)) minmax(3rem, 1fr);
+  }
+  
+  .grid-container > *:first-child {
+      grid-column: 2;
+      outline: 1px solid red;
+  }
+
+  .grid-container > *:last-child {
+      grid-column: 3;
+      outline: 1px solid yellow;
+  }
+}
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.

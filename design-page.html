@@ -96,30 +96,35 @@
             <!-- navigation -->
             <div>
                 <nav>
-                    <ul class="primary-navigation flex" style="--gap: 14rem">
+                    <ul class="primary-navigation underline flex" style="--gap: 14rem">
                         <li class="active"><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span>00</span>Active</a></li>
-                        <li class="underline"><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span>01</span>Hovered</a></li>
-                        <li class="underline"><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span>02</span>Idle</a></li>
+                        <li><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span>01</span>Hovered</a></li>
+                        <li><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span>02</span>Idle</a></li>
                     </ul>
                 </nav>
             </div>
             
             <div class="flex">
-                <div class="flow" style="--flow-space: 15rem; margin-left: 5rem;">
+                <div style="margin: 10rem">
                     <!-- explore button -->
                     <a href="#" class="ff-bel fs-32 uppercase bg-white txt-dark large-button">Explore</a>
                 </div>
                 
-                <div style="margin-bottom: 50vh">
+                <div class="flow" style="--flow-space: 5rem; margin-bottom: 50vh">
                     <!-- Tabs -->
-                    <div class="tab-list flex">
-                        <button class="underline ff-bar-con bg-dark txt-light let-spacing-2 uppercase">Moon</button>
-                        <button class="underline ff-bar-con bg-dark txt-light let-spacing-2 uppercase">Mars</button>
-                        <button class="underline ff-bar-con bg-dark txt-light let-spacing-2 uppercase">Europa</button>
+                    <div class="tab-list underline flex" style="--gap: 14rem">
+                        <button aria-selected="true" class="ff-bar-con bg-dark txt-light let-spacing-2 uppercase">Moon</button>
+                        <button aria-selected="false" class="ff-bar-con bg-dark txt-light let-spacing-2 uppercase">Mars</button>
+                        <button aria-selected="false" class="ff-bar-con bg-dark txt-light let-spacing-2 uppercase">Europa</button>
                     </div>
                     
                     <!-- Dots -->
-                    
+                    <div class="dot-indicators flex">
+                        <button aria-selected="true"><span class="sr-only">Slide title</span></button>
+                        <button aria-selected="false"><span class="sr-only">Slide title</span></button>
+                        <button aria-selected="false"><span class="sr-only">Slide title</span></button>
+                    </div>
+
                     
                     <!-- Numbers -->
                 </div>

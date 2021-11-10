@@ -18,7 +18,7 @@
    --fs-14: 1.4rem;
    --fs-16: 1.6rem;
    --fs-18: 1.5rem;
-   --fs-28: 2.8rem;
+   --fs-28: 2rem;
    --fs-32: 1.6rem;
    --fs-56: 2.4rem;
    --fs-100: 5.6rem;
@@ -31,11 +31,11 @@
       --fs-100: 8rem;
       --fs-56: 4rem;
       --fs-32: 2.4rem;
-      --fs-28: 1.6rem;
+      --fs-28: 2rem;
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 820px) {
   :root {
       --fs-100: 10rem;
       --fs-56: 5.6rem;
@@ -141,23 +141,28 @@ select {
 
 /* grid-container settings */
 .grid-container {
-  border: 5px solid limegreen;
   display: grid;
+  text-align: center;
+  padding: 0 2em;
+  place-items: center;
 }
-@media (min-width: 720px) {
+.grid-container * {
+  max-width: 50ch;
+  text-align: center;
+}
+@media (min-width: 820px) {
   .grid-container {
-      column-gap: var(--container-gap, 4rem);
-      grid-template-columns: minmax(3rem, 1fr) repeat(2, minmax(0, 60rem)) minmax(3rem, 1fr);
+    text-align: left;
+    column-gap: var(--container-gap, 4rem);
+    grid-template-columns: minmax(3rem, 1fr) repeat(2, minmax(0, 60rem)) minmax(3rem, 1fr);
   }
   
   .grid-container > *:first-child {
-      grid-column: 2;
-      outline: 1px solid red;
+    grid-column: 2;
   }
 
   .grid-container > *:last-child {
-      grid-column: 3;
-      outline: 1px solid yellow;
+    grid-column: 3;
   }
 }
 
@@ -244,6 +249,7 @@ select {
 
 /* large-button */
 .large-button {
+  font-size: 3rem;
   display: inline-grid;
   place-items: center;
   padding: 0 2em;
@@ -333,6 +339,12 @@ select {
   background: hsl( var(--clr-white) );
 }
 /* end of slider buttons */
+
+.space {
+  margin-bottom: 7rem;
+  align-items: end;
+}
+
 
 
 

@@ -144,7 +144,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Coding Fantasy](https://codingfantasy.com) - This helped me practice CSS GRID. Challenging and interactive way to learn using css grid properties.
+- [Coding Fantasy](https://codingfantasy.com) - This helped me practice CSS GRID. Challenging and interactive way to learn the css grid properties' application.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author

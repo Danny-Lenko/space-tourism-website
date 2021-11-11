@@ -28,7 +28,7 @@
 
 ### What I learned
 
-the Utility Classes "gap" property to use between flex and grid elements (html customizable variable)
+1) the Utility Classes "gap" property to use between flex and grid elements (html customizable variable)
 
 ```css
 .flex {
@@ -41,7 +41,7 @@ the Utility Classes "gap" property to use between flex and grid elements (html c
 }
 ```
 
-the .flow class to add space on top of children
+2) the .flow class to add space on top of children
 ```html
 <div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
 </div>
@@ -52,7 +52,7 @@ the .flow class to add space on top of children
 }
 ```
 
-"a" button with modern css properties
+3) "a" button with modern css properties
 ```html
 <a href="#" class="ff-bel fs-32 uppercase bg-white txt-dark large-button">Explore</a>
 ```
@@ -66,7 +66,7 @@ the .flow class to add space on top of children
   border-radius: 50%;
 }
 ```
-added an animated glow around the button
+4) added an animated glow around the button
 ```css
 .large-button::after {
   content: '';
@@ -86,7 +86,7 @@ added an animated glow around the button
 }
 ```
 
-use of aria-selected property to add styles to active button
+5) use of aria-selected property to add styles to active button
 ```html
 <div class="tab-list underline flex" style="--gap: 14rem">
     <button aria-selected="true" class="uppercase">Moon</button>
@@ -102,7 +102,7 @@ use of aria-selected property to add styles to active button
 }
 ```
 
-The mobile-first grid-container based layout settings
+6) the mobile-first grid-container based layout settings
 ```css
 body {
   min-height: 100vh;
@@ -129,10 +129,28 @@ body {
   }
 }
 ```
-the clamp property (used on the bigest font-size)
+7) the clamp property (used on the bigest font-size)
 ```css
 :root {
   --fs-150: clamp(8rem, 8vw + 1rem, 15rem);
+}
+```
+
+8) the glassmorphism settings applied on mobile navigation background along with its browsers support
+```css
+.primary-navigation {
+
+  background: hsl( var(--clr-dark) / .95 );
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+}
+@supports (backdrop-filter: blur(1rem)) {
+  .primary-navigation {
+      background: hsl( var(--clr-white) / .02);
+      backdrop-filter: blur(1.5rem);
+      -webkit-backdrop-filter: blur(1.5rem);
+  }
 }
 ```
 

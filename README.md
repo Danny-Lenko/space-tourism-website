@@ -162,8 +162,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Coding Fantasy](https://codingfantasy.com) - This helped me practice CSS GRID. Challenging and interactive way to learn the css grid properties' application.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Grid Attack](https://codingfantasy.com) - This helped me practice CSS GRID. Challenging and interactive way to learn the css grid properties' application.
+- [Glassmorphism Generator](https://hype4.academy/tools/glassmorphism-generator) - This may be handy if you need to apply the glassmorphism effect. Except the generator, they have articles on this topic.
 
 ## Author
 

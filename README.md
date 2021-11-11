@@ -154,6 +154,32 @@ body {
 }
 ```
 
+9) the script to toggle burger menu using attribute change (left my own siple own)
+```html
+<ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+```
+
+```js
+const nav = document.querySelector(".primary-navigation");
+const navToggle = document.querySelector(".mobile-nav-toggle");
+
+navToggle.addEventListener("click", () => {
+    
+    const visiblity = nav.getAttribute("data-visible");
+    if (visiblity === "false") {
+        nav.setAttribute("data-visible", true);
+    } else {
+        nav.setAttribute("data-visible", false);
+    }
+})
+```
+
+```css
+.primary-navigation[data-visible="true"] {
+    transform: translateX(0);
+}
+```
+
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ### Continued development

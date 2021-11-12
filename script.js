@@ -3,17 +3,14 @@
 const burgerBtn = document.querySelector('.burger-btn');
 const primaryNavigation = document.querySelector('.primary-navigation');
 
-let btnPushed = false;
-
-burgerBtn.addEventListener('click', function() {
-
-   console.log("btnClicked");
-
-   if (btnPushed === false) {
-      primaryNavigation.style.transform = "translateX(0)";
-      btnPushed = true;
+burgerBtn.addEventListener("click", () => {
+    
+   const visiblity = primaryNavigation.getAttribute("data-visible");
+   if (visiblity === "false") {
+       primaryNavigation.setAttribute("data-visible", true);
+       burgerBtn.setAttribute("aria-expanded", true);
    } else {
-      primaryNavigation.style.transform = "translateX(100%)";
-      btnPushed = false;
+       primaryNavigation.setAttribute("data-visible", false);
+       burgerBtn.setAttribute("aria-expanded", false);
    }
 })

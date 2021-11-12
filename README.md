@@ -154,7 +154,7 @@ body {
 }
 ```
 
-9) the script to toggle burger menu using attribute change (left my own siple own)
+9) the script to toggle burger menu using attribute change (left my own siple one)
 ```html
 <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
 ```
@@ -180,7 +180,6 @@ navToggle.addEventListener("click", () => {
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ### Continued development
 
@@ -190,6 +189,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [Grid Attack](https://codingfantasy.com) - This helped me practice CSS GRID. Challenging and interactive way to learn the css grid properties' application.
 - [Glassmorphism Generator](https://hype4.academy/tools/glassmorphism-generator) - This may be handy if you need to apply the glassmorphism effect. Except the generator, they have articles on this topic.
+
+- [The Markdown Guide](https://www.markdownguide.org/) - for more help with writing markdown.
 
 ## Author
 

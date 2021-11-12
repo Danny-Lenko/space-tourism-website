@@ -154,7 +154,7 @@ body {
 }
 ```
 
-9) the script to toggle burger menu using attribute change (left my own siple one)
+9) the script to toggle burger menu using attribute change
 ```html
 <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
 ```

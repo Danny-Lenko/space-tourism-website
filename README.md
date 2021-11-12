@@ -185,6 +185,26 @@ navToggle.addEventListener("click", () => {
 <li><a href="#"><span aria-hidden="true">01</span>Destination</a></li>
 ```
 
+11) for accessibility reasons the way to skip rigth to the main content avoiding tabing through the navigation (.)
+```html
+  <a class="skip-to-content" href="#main">Skip to content</a>
+```
+```css
+ .skip-to-content {
+  position: absolute;
+  z-index: 999;
+  background: hsl( var(--clr-white) );
+  color: hsl( var(--clr-dark) );
+  padding: .5em 1em;
+  margin-inline: auto;
+  transform: translateY(-100%);
+  transition: transform 250ms ease-in;
+}
+.skip-to-content:focus {
+  transform: translateY(0);
+}
+```
+
 
 ### Continued development
 

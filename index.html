@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <title>Space tourism website</title>
   <script src="script.js" defer></script>
 </head>
+
 <body class="home">
+  <a class="skip-to-content" href="#main">Skip to content</a>
 
   <header class="header flex">
     <div class="header__logo-wrapper">
       <img class="header__logo" src="./assets/shared/logo.svg" alt="space tourism logo">
     </div>
     <button class="burger-btn" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
-
     <nav class="header__nav">
       <ul id="primary-navigation" class="primary-navigation underline flex">
         <li class="active"><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span aria-hidden="true">00</span>Home</a></li>
@@ -27,7 +27,7 @@
     </nav>
   </header>
   
-  <main class="space grid-container">
+  <main id="main" class="space grid-container">
     <div class="space__content">
       <p class="fs-28 ff-bar-con uppercase let-spacing-1" style="margin: 0 auto;">So, you want to travel to</p>
       <p class="fs-150 ff-bel uppercase">space</p>
@@ -36,8 +36,7 @@
     <div class="space__btn">
       <a href="#" class="ff-bel uppercase bg-white txt-dark large-button">Explore</a>
     </div>
-  </main>  
-  
+  </main>
 
 </body>
 </html>

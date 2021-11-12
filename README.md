@@ -180,6 +180,11 @@ navToggle.addEventListener("click", () => {
 }
 ```
 
+10) for accessibility reasons the way to hide unnecessary info (aria-hidden)
+```html
+<li><a href="#"><span aria-hidden="true">01</span>Destination</a></li>
+```
+
 
 ### Continued development
 

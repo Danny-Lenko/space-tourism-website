@@ -215,8 +215,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Grid Attack](https://codingfantasy.com) - This helped me practice CSS GRID. Challenging and interactive game aimed at learning the css grid properties' application.
 - [Glassmorphism Generator](https://hype4.academy/tools/glassmorphism-generator) - This may be handy if you need to apply the glassmorphism effect. Except the generator, they have articles on this topic.
 
-- [Git + GitHub](https://www.youtube.com/watch?v=RGOj5yH7evk) - the basic git commands.
-- [The Markdown Guide](https://www.markdownguide.org/) - for more help with writing markdown.
+- [Git + GitHub](https://www.youtube.com/watch?v=RGOj5yH7evk) - the basic git commands (Youtube).
+- [The Markdown Guide](https://www.markdownguide.org/) - for more help with writing markdown (Article).
 
 ## Author
 

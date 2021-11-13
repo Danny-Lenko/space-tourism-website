@@ -18,7 +18,7 @@
    --fs-14: 1.4rem;
    --fs-16: 1.6rem;
    --fs-18: 1.5rem;
-   --fs-28: 2rem;
+   --fs-28: 2.8rem;
    --fs-32: 1.6rem;
    --fs-56: 2.4rem;
    --fs-100: 5.6rem;
@@ -30,7 +30,7 @@
     --fs-100: 8rem;
     --fs-56: 4rem;
     --fs-32: 2.4rem;
-    --fs-28: 2rem;
+    --fs-28: 2.8rem;
   }
 }
 
@@ -461,24 +461,61 @@ select {
 ===================== */
 
 /* home page */
-
 .space {
   margin-bottom: 7rem;
   align-items: end;
 }
-
 .home {
   background-image: url(./assets/home/background-home-mobile.jpg);
 }
-
 @media (min-width: 560px) {
   .home {
     background-image: url(./assets/home/background-home-tablet.jpg);
   }
 }
-
 @media (min-width: 820px) {
   .home {
     background-image: url(./assets/home/background-home-desktop.jpg);
+  }
+}
+
+/* destination page */
+
+.destination {
+  background-image: url(./assets/destination/background-destination-mobile.jpg);
+}
+.destination-main {
+  margin-bottom: 7rem;
+  align-items: end;
+}
+.destination-main .sect-title {
+  width: 100%;
+  margin-top: 4rem;
+}
+.destination-main__content > .line-hei2 {
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid hsl( var(--clr-white) / .2);
+}
+.destination-main__data {
+  flex-direction: column;
+  --gap: 3rem;
+}
+@media (min-width: 560px) {
+  .destination {
+    background-image: url(./assets/destination/background-destination-tablet.jpg);
+  }
+  .destination-main > .sect-title {
+    text-align: left;
+    justify-self: left;
+  }
+  .destination-main__data {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 820px) {
+  .destination {
+    background-image: url(./assets/destination/background-destination-desktop.jpg);
   }
 }

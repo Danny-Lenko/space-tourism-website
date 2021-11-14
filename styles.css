@@ -483,6 +483,8 @@ select {
 
 .destination {
   background-image: url(./assets/destination/background-destination-mobile.jpg);
+  background-size: cover;
+  background-position: top left;
 }
 .destination-main {
   margin-bottom: 7rem;

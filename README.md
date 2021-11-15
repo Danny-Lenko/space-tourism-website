@@ -205,6 +205,14 @@ navToggle.addEventListener("click", () => {
 }
 ```
 
+12) the use of webp format
+```html
+<picture>
+  <source srcset="assets/crew/image-douglas-hurley.png" type="image/webp">
+  <img src="assets/crew/image-douglas-hurley.png" alt="Douglas Hurley">
+</picture>
+```
+
 
 ### Continued development
 

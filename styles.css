@@ -42,6 +42,7 @@
     --fs-56: 5.6rem;
     --fs-32: 3.2rem;
     --fs-28: 2.8rem;
+    --fs-16: 1.8rem;
   }
 }
 
@@ -529,11 +530,52 @@ select {
   flex-direction: column;
   --gap: 3rem;
 }
+
+/* crew page */
+
+.crew-body {
+  background-image: url(./assets/crew/background-crew-mobile.jpg);
+}
+@media (min-width: 35rem) {
+  .crew-body {
+      background-position: center center;
+      background-image: url(./assets/crew/background-crew-tablet.jpg);
+  }
+}
+@media (min-width: 45rem) {
+  .crew-body {
+      background-image: url(./assets/crew/background-crew-desktop.jpg);
+  }
+} 
+
+.grid-container--crew {
+  --flow-space: 2rem;
+  grid-template-areas: 
+      'title'
+      'img'
+      'tabs'
+      'article';
+  margin-bottom: 4rem;
+}
+.grid-container--crew > img {
+  grid-area: img;
+  max-width: 60%;
+  border-bottom: 1px solid hsl( var(--clr-white) / .2);
+}
+.grid-container--crew > .dot-indicators {
+  grid-area: tabs;
+}
+.grid-container--crew > .crew__article {
+  grid-area: article;
+}
+
 @media (min-width: 560px) {
+  /* destination page queries */
   .destination-body {
     background-image: url(./assets/destination/background-destination-tablet.jpg);
   }
-  .destination > .sect-title {
+  .destination > .sect-title,
+  .crew > .sect-title {
     text-align: left;
     justify-self: left;
   }
@@ -541,8 +583,21 @@ select {
     flex-direction: row;
     justify-content: space-evenly;
   }
+
+  /* crew page queries */
+  .grid-container--crew {
+    --flow-space: 3rem;
+    grid-template-areas: 
+        'title'
+        'article'
+        'tabs'
+        'img';
+    margin-bottom: 0;
+  }
 }
+
 @media (min-width: 820px) {
+  /* destination page queries */
   .destination-body {
     background-image: url(./assets/destination/background-destination-desktop.jpg);
   }
@@ -554,7 +609,6 @@ select {
     justify-content: flex-start;
     --gap: 7vw;
   }
-
   .grid-container--destination {
     margin-top: 2rem;
     grid-template-areas: 
@@ -568,4 +622,20 @@ select {
     width: 80%;
     align-self: center;
   }
+
+  /* crew page queries */
+  .grid-container--crew {
+    grid-template-areas: 
+        '. title title .'
+        '. article img .'
+        '. tabs img .';
+    align-content: start;
+  }
+  .grid-container--crew > img {
+    align-self: end;
+  }
+  .grid-container--crew > * {
+    justify-self: start;
+  }
+
 }

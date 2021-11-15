@@ -9,7 +9,7 @@
   <script src="script.js" defer></script>
 </head>
 
-<body class="destination">
+<body class="destination-body">
   <a class="skip-to-content" href="#main">Skip to content</a>
 
   <header class="header flex">
@@ -27,30 +27,32 @@
     </nav>
   </header>
   
-  <main id="main" class="grid-container destination-main flow" style="--flow-space: 4rem">
+  <main id="main" class="grid-container grid-container--destination destination flow" style="--flow-space: 4rem">
     <h2 class="sect-title" style="font-size: var(--fs-sect-title);"><span>01</span> Pick your destination</h2>
 
     <img src="./assets/destination/image-moon.png" alt="Moon">
 
-    <div class="destination-main__content">
+    <div class="destination__content">
       <div class="tab-list underline flex" style="justify-content:center; --gap: 4rem; margin-bottom: 4rem">
         <button aria-selected="true" class="ff-bar-con txt-light let-spacing-2 uppercase">Moon</button>
         <button aria-selected="false" class="ff-bar-con txt-light let-spacing-2 uppercase">Mars</button>
         <button aria-selected="false" class="ff-bar-con txt-light let-spacing-2 uppercase">Europa</button>
         <button aria-selected="false" class="ff-bar-con txt-light let-spacing-2 uppercase">Titan</button>
       </div>
-      <p class="fs-150 ff-bel uppercase">Moon</p>
-      <p class="line-hei2">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
-      <div class="destination-main__data flex">
-        <div class="destination-main__wrapper">
-          <p class="fs-14 ff-bar-con uppercase let-spacing-3 txt-light" style="margin: 0 auto 1rem;">Avg. Distance</p>
-          <p class="fs-28 ff-bel uppercase">384,400 km</p>  
-        </div>
-        <div class="destination-main__wrapper">
-          <p class="fs-14 ff-bar-con uppercase let-spacing-3 txt-light" style="margin: 0 auto 1rem;">Est. travel time</p>
-          <p class="fs-28 ff-bel uppercase">3 days</p> 
-        </div>
-      </div>
+      <article class="destination__article">
+        <p class="fs-150 ff-bel uppercase">Moon</p>
+        <p class="line-hei2">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        <div class="destination__data flex">
+          <div class="destination__wrapper">
+            <p class="fs-14 ff-bar-con uppercase let-spacing-3 txt-light" style="margin: 0 auto 1rem;">Avg. Distance</p>
+            <p class="fs-28 ff-bel uppercase">384,400 km</p>  
+          </div>
+          <div class="destination__wrapper">
+            <p class="fs-14 ff-bar-con uppercase let-spacing-3 txt-light" style="margin: 0 auto 1rem;">Est. travel time</p>
+            <p class="fs-28 ff-bel uppercase">3 days</p> 
+          </div>
+        </div>  
+      </article>
     </div>
   </main>
 <body>

@@ -27,16 +27,27 @@
     </nav>
   </header>
   
-  <main id="main" class="destination grid-container grid-container--destination flow" style="--flow-space: 2rem;">
+  <main id="main" class="destination grid-container grid-container--destination flow" style="--flow-space: 2rem; --container-gap: 1rem">
     <h2 class="sect-title" style="font-size: var(--fs-sect-title);"><span aria-hidden="true">01</span> Pick your destination</h2>
 
-    <img src="./assets/destination/image-moon.png" alt="Moon">
+    <div class="img">
+      <img src="./assets/destination/image-moon.png" alt="moon">
+    </div>
+    <div hidden class="img">
+      <img src="./assets/destination/image-mars.png" alt="mars">
+    </div>
+    <div hidden class="img">
+      <img src="./assets/destination/image-europa.png" alt="europa">
+    </div>
+    <div hidden class="img">
+      <img src="./assets/destination/image-titan.png" alt="titan">
+    </div>
 
     <div class="tab-list underline flex" style="justify-content:center; --gap: 4rem">
-      <button aria-selected="true" class="ff-bar-con txt-light let-spacing-2 uppercase">Moon</button>
-      <button aria-selected="false" class="ff-bar-con txt-light let-spacing-2 uppercase">Mars</button>
-      <button aria-selected="false" class="ff-bar-con txt-light let-spacing-2 uppercase">Europa</button>
-      <button aria-selected="false" class="ff-bar-con txt-light let-spacing-2 uppercase">Titan</button>
+      <button aria-selected="true" role="tab" aria-controls="moon-tab" tabindex="0" class="ff-bar-con txt-light let-spacing-2 uppercase">Moon</button>
+      <button aria-selected="false" role="tab" aria-controls="mars-tab" tabindex="-1" class="ff-bar-con txt-light let-spacing-2 uppercase">Mars</button>
+      <button aria-selected="false" role="tab" aria-controls="europa-tab" tabindex="-1" class="ff-bar-con txt-light let-spacing-2 uppercase">Europa</button>
+      <button aria-selected="false" role="tab" aria-controls="moon-tab" tabindex="-1" class="ff-bar-con txt-light let-spacing-2 uppercase">Titan</button>
     </div>
 
     <article class="destination__article">
@@ -53,6 +64,52 @@
         </div>
       </div>  
     </article>
+
+    <article hidden class="destination__article">
+      <p class="fs-150 ff-bel uppercase">Mars</p>
+      <p class="line-hei2">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+      <div class="destination__data flex">
+        <div class="destination__wrapper">
+          <p class="fs-14 ff-bar-con uppercase let-spacing-3 txt-light" style="margin: 0 auto 1rem;">Avg. Distance</p>
+          <p class="fs-28 ff-bel uppercase">225 mil. km</p>  
+        </div>
+        <div class="destination__wrapper">
+          <p class="fs-14 ff-bar-con uppercase let-spacing-3 txt-light" style="margin: 0 auto 1rem;">Est. travel time</p>
+          <p class="fs-28 ff-bel uppercase">9 months</p>
+        </div>
+      </div>  
+    </article>
+
+    <article hidden class="destination__article">
+      <p class="fs-150 ff-bel uppercase">Europa</p>
+      <p class="line-hei2">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+      <div class="destination__data flex">
+        <div class="destination__wrapper">
+          <p class="fs-14 ff-bar-con uppercase let-spacing-3 txt-light" style="margin: 0 auto 1rem;">Avg. Distance</p>
+          <p class="fs-28 ff-bel uppercase">628 mil. km</p>  
+        </div>
+        <div class="destination__wrapper">
+          <p class="fs-14 ff-bar-con uppercase let-spacing-3 txt-light" style="margin: 0 auto 1rem;">Est. travel time</p>
+          <p class="fs-28 ff-bel uppercase">3 years</p>
+        </div>
+      </div>  
+    </article>
+
+    <article hidden class="destination__article">
+      <p class="fs-150 ff-bel uppercase">Titan</p>
+      <p class="line-hei2">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+      <div class="destination__data flex">
+        <div class="destination__wrapper">
+          <p class="fs-14 ff-bar-con uppercase let-spacing-3 txt-light" style="margin: 0 auto 1rem;">Avg. Distance</p>
+          <p class="fs-28 ff-bel uppercase">1.6 bil. km</p>  
+        </div>
+        <div class="destination__wrapper">
+          <p class="fs-14 ff-bar-con uppercase let-spacing-3 txt-light" style="margin: 0 auto 1rem;">Est. travel time</p>
+          <p class="fs-28 ff-bel uppercase">7 years</p>
+        </div>
+      </div>  
+    </article>
+
 
   </main>
 <body>

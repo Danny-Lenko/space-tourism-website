@@ -510,7 +510,7 @@ select {
   width: 100%;
   grid-area: title;
 }
-.grid-container--destination > img {
+.grid-container--destination > .img {
   width: 60%;
   grid-area: img;
 }
@@ -568,7 +568,9 @@ select {
 .grid-container--crew > .crew__article {
   grid-area: article;
 }
-
+.img > img {
+  width: 100%;
+}
 @media (min-width: 560px) {
   /* destination page queries */
   .destination-body {
@@ -618,7 +620,7 @@ select {
     justify-items: start;
     align-content: start;
   }
-  .grid-container--destination > img {
+  .grid-container--destination > .img {
     width: 80%;
     align-self: center;
   }

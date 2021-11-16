@@ -31,27 +31,27 @@
   <main id="main" class="destination grid-container grid-container--destination flow" style="--flow-space: 2rem; --container-gap: 1rem">
     <h2 class="sect-title" style="font-size: var(--fs-sect-title);"><span aria-hidden="true">01</span> Pick your destination</h2>
 
-    <div class="img">
+    <div class="img" role="tabimg" id="moon-img">
       <img src="./assets/destination/image-moon.png" alt="moon">
     </div>
-    <div hidden class="img">
+    <div hidden class="img" role="tabimg" id="mars-img">
       <img src="./assets/destination/image-mars.png" alt="mars">
     </div>
-    <div hidden class="img">
+    <div hidden class="img" role="tabimg" id="europa-img">
       <img src="./assets/destination/image-europa.png" alt="europa">
     </div>
-    <div hidden class="img">
+    <div hidden class="img" role="tabimg" id="titan-img">
       <img src="./assets/destination/image-titan.png" alt="titan">
     </div>
 
     <div class="tab-list underline flex" role="tablist" style="justify-content:center; --gap: 4rem">
-      <button aria-selected="true" role="tab" aria-controls="moon-tab" class="ff-bar-con txt-light let-spacing-2 uppercase" tabindex="0" >Moon</button>
-      <button aria-selected="false" role="tab" aria-controls="mars-tab" class="ff-bar-con txt-light let-spacing-2 uppercase" tabindex="-1">Mars</button>
-      <button aria-selected="false" role="tab" aria-controls="europa-tab" class="ff-bar-con txt-light let-spacing-2 uppercase" tabindex="-1">Europa</button>
-      <button aria-selected="false" role="tab" aria-controls="moon-tab" class="ff-bar-con txt-light let-spacing-2 uppercase" tabindex="-1">Titan</button>
+      <button aria-selected="true" role="tab" aria-controls="moon-tab" class="ff-bar-con txt-light let-spacing-2 uppercase" tabindex="0" data-img="moon-img">Moon</button>
+      <button aria-selected="false" role="tab" aria-controls="mars-tab" class="ff-bar-con txt-light let-spacing-2 uppercase" tabindex="-1" data-img="mars-img">Mars</button>
+      <button aria-selected="false" role="tab" aria-controls="europa-tab" class="ff-bar-con txt-light let-spacing-2 uppercase" tabindex="-1" data-img="europa-img">Europa</button>
+      <button aria-selected="false" role="tab" aria-controls="titan-tab" class="ff-bar-con txt-light let-spacing-2 uppercase" tabindex="-1" data-img="titan-img">Titan</button>
     </div>
 
-    <article class="destination__article">
+    <article class="destination__article" id="moon-tab" tabindex="0" role="tabpanel">
       <p class="fs-150 ff-bel uppercase">Moon</p>
       <p class="line-hei2">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
       <div class="destination__data flex">
@@ -66,7 +66,7 @@
       </div>  
     </article>
 
-    <article hidden class="destination__article">
+    <article hidden class="destination__article" id="mars-tab" tabindex="0" role="tabpanel">
       <p class="fs-150 ff-bel uppercase">Mars</p>
       <p class="line-hei2">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
       <div class="destination__data flex">
@@ -81,7 +81,7 @@
       </div>  
     </article>
 
-    <article hidden class="destination__article">
+    <article hidden class="destination__article" id="europa-tab" tabindex="0" role="tabpanel">
       <p class="fs-150 ff-bel uppercase">Europa</p>
       <p class="line-hei2">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
       <div class="destination__data flex">
@@ -96,7 +96,7 @@
       </div>  
     </article>
 
-    <article hidden class="destination__article">
+    <article hidden class="destination__article" id="titan-tab" tabindex="0" role="tabpanel">
       <p class="fs-150 ff-bel uppercase">Titan</p>
       <p class="line-hei2">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
       <div class="destination__data flex">
@@ -110,7 +110,6 @@
         </div>
       </div>  
     </article>
-
 
   </main>
 <body>

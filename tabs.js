@@ -1,35 +1,32 @@
-// "use strict";
+"use strict"
 
-const tabList = document.querySelector('[role="tablist"]');
-const tabs = tabList.querySelectorAll('[role="tab"]');
+const tabList = document.querySelector('[role=tablist]');
+const tabs = tabList.querySelectorAll('[role=tab]');
 
+let tabIndex = 0;
 
-tabList.addEventListener('keydown', changeTabFocus);
+tabList.addEventListener('keydown', trackKeyEvents);
 
+function trackKeyEvents(e) {
 
-let tabFocus = 0;
-function changeTabFocus(e) {
-    const keydownLeft = 37;
-    const keydownRight = 39;
-    
-    if (e.keyCode === keydownLeft || e.keyCode === keydownRight) {
-        tabs[tabFocus].setAttribute("tabindex", -1);
-    }
-    
-    if (e.keyCode === keydownRight) {
-        tabFocus++;
-        if (tabFocus >= tabs.length) {
-            tabFocus = 0;
-        }
-    }
-    
-    if (e.keyCode === keydownLeft) {
-        tabFocus--;
-        if (tabFocus < 0) {
-            tabFocus = tabs.length - 1;
-        }
-    }
-    
-    tabs[tabFocus].setAttribute("tabindex", 0);
-    tabs[tabFocus].focus();
+   if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+      tabs[tabIndex].setAttribute("tabindex", -1);
+   }
+
+   if (e.key === "ArrowRight") {
+      tabIndex++;
+   }
+
+   if (e.key === "ArrowLeft") {
+      tabIndex--;
+   }
+
+   if (tabIndex >= tabs.length) {
+      tabIndex = 0;
+   } else if (tabIndex < 0) {
+      tabIndex = tabs.length - 1;
+   }
+
+   tabs[tabIndex].setAttribute("tabindex", 0);
+   tabs[tabIndex].focus();
 }

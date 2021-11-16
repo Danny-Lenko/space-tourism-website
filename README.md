@@ -22,6 +22,7 @@
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- CSS utility classes
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
@@ -211,6 +212,21 @@ navToggle.addEventListener("click", () => {
   <source srcset="assets/crew/image-douglas-hurley.png" type="image/webp">
   <img src="assets/crew/image-douglas-hurley.png" alt="Douglas Hurley">
 </picture>
+```
+
+13) a single line to set the focus on the current element
+```js
+   tabs[tabIndex].focus();
+```
+
+14) the way to fetch an element's attributes by clicking on it
+```js
+function changeTabPanel(e) {
+    const targetTab = e.target;
+    const targetPanel = targetTab.getAttribute("aria-controls");
+
+    console.log(targetPanel);
+}
 ```
 
 

@@ -221,12 +221,28 @@ navToggle.addEventListener("click", () => {
 
 14) the way to fetch an element's attributes by clicking on it
 ```js
+tabs.forEach((tab) => {
+    tab.addEventListener('click', changeTabPanel);
+});
 function changeTabPanel(e) {
     const targetTab = e.target;
     const targetPanel = targetTab.getAttribute("aria-controls");
 
     console.log(targetPanel);
 }
+
+// then there is a piece of code that lets you get back a few steps back and refer to a parentNode
+
+function changeTabPanel(e) {
+    const targetTab = e.target;
+    const targetPanel = targetTab.getAttribute("aria-controls");
+    
+    const tabContainer = targetTab.parentNode;
+    const mainContainer = tabContainer.parentNode;
+    
+    console.log(mainContainer);
+}
+// and so on
 ```
 
 

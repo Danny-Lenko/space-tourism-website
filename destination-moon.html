@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <title>Space tourism website</title>
   <script src="script.js" defer></script>
+  <script src="tabs.js" defer></script>
 </head>
 
 <body class="destination-body">
@@ -43,11 +44,11 @@
       <img src="./assets/destination/image-titan.png" alt="titan">
     </div>
 
-    <div class="tab-list underline flex" style="justify-content:center; --gap: 4rem">
-      <button aria-selected="true" role="tab" aria-controls="moon-tab" tabindex="0" class="ff-bar-con txt-light let-spacing-2 uppercase">Moon</button>
-      <button aria-selected="false" role="tab" aria-controls="mars-tab" tabindex="-1" class="ff-bar-con txt-light let-spacing-2 uppercase">Mars</button>
-      <button aria-selected="false" role="tab" aria-controls="europa-tab" tabindex="-1" class="ff-bar-con txt-light let-spacing-2 uppercase">Europa</button>
-      <button aria-selected="false" role="tab" aria-controls="moon-tab" tabindex="-1" class="ff-bar-con txt-light let-spacing-2 uppercase">Titan</button>
+    <div class="tab-list underline flex" role="tablist" style="justify-content:center; --gap: 4rem">
+      <button aria-selected="true" role="tab" aria-controls="moon-tab" class="ff-bar-con txt-light let-spacing-2 uppercase" tabindex="0" >Moon</button>
+      <button aria-selected="false" role="tab" aria-controls="mars-tab" class="ff-bar-con txt-light let-spacing-2 uppercase" tabindex="-1">Mars</button>
+      <button aria-selected="false" role="tab" aria-controls="europa-tab" class="ff-bar-con txt-light let-spacing-2 uppercase" tabindex="-1">Europa</button>
+      <button aria-selected="false" role="tab" aria-controls="moon-tab" class="ff-bar-con txt-light let-spacing-2 uppercase" tabindex="-1">Titan</button>
     </div>
 
     <article class="destination__article">

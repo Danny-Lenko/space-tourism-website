@@ -248,7 +248,7 @@ function changeTabPanel(e) {
 
 ### Continued development
 
-* AIRA (Accessible Rich Internet Applications);
+* aria (Accessible Rich Internet Applications);
 * Css custom properties (figure out all the advantages of setting variables);
 * vh, vw values and their relevance;
 * the clamp() property;

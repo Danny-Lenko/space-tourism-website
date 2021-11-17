@@ -252,9 +252,10 @@ function changeTabPanel(e) {
 * Css custom properties (figure out all the advantages of setting variables);
 * vh, vw values and their relevance;
 * the clamp() property;
+* CSS grid;
+* JS - setting local variables;
 * the minmax() property;
 * the translateX(Y) property;
-* CSS grid;
 
 *Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 

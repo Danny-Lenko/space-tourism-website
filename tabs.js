@@ -28,3 +28,25 @@ function changeTabFocus(e) {
    tabs[tabFocus].focus();
 }
 
+tabs.forEach((tab) => {
+   tab.addEventListener('click', changeTabPanel);
+});
+
+function changeTabPanel(e) {
+   const tabClicked = e.target;
+   const tabAttribute = tabClicked.getAttribute('aria-controls');
+   const imgAttribute = tabClicked.getAttribute('data-img');
+   const clickedParent = tabClicked.parentNode;
+   const commonParent = clickedParent.parentNode;
+
+   commonParent.querySelectorAll('[role=tabpanel]').forEach((panel) => {
+      panel.setAttribute('hidden', 'true');
+   });
+   commonParent.querySelector([`#${tabAttribute}`]).removeAttribute('hidden');
+
+   commonParent.querySelectorAll('[role=tabimg]').forEach((img) => {
+      img.setAttribute('hidden', 'true');
+   });
+   commonParent.querySelector([`#${imgAttribute}`]).removeAttribute('hidden');
+}
+

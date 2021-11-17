@@ -249,7 +249,7 @@ function changeTabPanel(e) {
 ### Continued development
 
 * aria (Accessible Rich Internet Applications);
-* Css custom properties (figure out all the advantages of setting variables);
+* CSS custom properties (figure out all the advantages of setting variables);
 * vh, vw values and their relevance;
 * the clamp() property;
 * CSS grid;

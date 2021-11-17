@@ -246,6 +246,9 @@ select {
    font-weight: 700;
 }
 
+.line-hei1 {
+  line-height: 1.5;
+}
 .line-hei2 {
   line-height: 2;
 }
@@ -557,7 +560,7 @@ select {
       'article';
   margin-bottom: 4rem;
 }
-.grid-container--crew > img {
+.grid-container--crew > .img {
   grid-area: img;
   max-width: 60%;
   border-bottom: 1px solid hsl( var(--clr-white) / .2);
@@ -633,7 +636,7 @@ select {
         '. tabs img .';
     align-content: start;
   }
-  .grid-container--crew > img {
+  .grid-container--crew > .img {
     align-self: end;
   }
   .grid-container--crew > * {

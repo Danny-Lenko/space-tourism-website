@@ -20,10 +20,10 @@
     <button class="burger-btn" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
     <nav class="header__nav">
       <ul id="primary-navigation" class="primary-navigation underline flex">
-        <li class="active"><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span aria-hidden="true">00</span>Home</a></li>
-        <li><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span aria-hidden="true">01</span>Destination</a></li>
-        <li><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span aria-hidden="true">02</span>Crew</a></li>
-        <li><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="#"><span aria-hidden="true">03</span>Technology</a></li>
+        <li><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="index.html"><span aria-hidden="true">00</span>Home</a></li>
+        <li><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="destination.html"><span aria-hidden="true">01</span>Destination</a></li>
+        <li class="active"><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="crew.html"><span aria-hidden="true">02</span>Crew</a></li>
+        <li><a class="ff-bar-con txt-white let-spacing-2 uppercase" href="technology.html"><span aria-hidden="true">03</span>Technology</a></li>
       </ul>
     </nav>
   </header>
@@ -31,7 +31,7 @@
   <main id="main" class="crew grid-container grid-container--crew flow">
     <h2 class="sect-title" style="font-size: var(--fs-sect-title);"><span aria-hidden="true">02</span> Meet your crew</h2>
 
-    <div class="dot-indicators flex" role="tablist" aria-label="crew member list">
+    <div class="dot-indicators flex" role="tablist" aria-label="crew member list" style="align-self: start;">
       <button aria-selected="true" aria-controls="commander-tab" role="tab" data-img="commander-image" tabindex="0"><span class="sr-only">The commander</span></button>
       <button aria-selected="false" aria-controls="mission-tab" role="tab" data-img="mission-image" tabindex="-1"><span class="sr-only">The mission specialist</span></button>
       <button aria-selected="false" aria-controls="pilot-tab" role="tab" data-img="pilot-image" tabindex="-1"><span class="sr-only">The pilot</span></button>
@@ -75,16 +75,16 @@
         fly to the ISS, and the first Iranian in space.</p>
     </article> 
 
-    <div class="img" id="commander-image" role="tabimg">
+    <div class="img img--crew" id="commander-image" role="tabimg">
       <img src="assets/crew/image-douglas-hurley.png" alt="Douglas Hurley">
     </div>
-    <div class="img" hidden id="mission-image" role="tabimg">
+    <div class="img img--crew"  hidden id="mission-image" role="tabimg">
       <img src="assets/crew/image-mark-shuttleworth.png" alt="Mark Shuttleworth">
     </div>
-    <div class="img" hidden id="pilot-image" role="tabimg">
+    <div class="img img--crew" hidden id="pilot-image" role="tabimg">
       <img src="assets/crew/image-victor-glover.png" alt="Victor Glover">
     </div>
-    <div class="img" hidden id="crew-image" role="tabimg">
+    <div class="img img--crew" hidden id="crew-image" role="tabimg">
       <img src="assets/crew/image-anousheh-ansari.png" alt="Anousheh Ansari">
     </div>
 

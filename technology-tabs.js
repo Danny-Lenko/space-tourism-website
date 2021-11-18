@@ -51,11 +51,13 @@ function changeTabPanel(e) {
 
 function hideContent(element, content) {
    element.querySelectorAll(content).forEach((item) => {
-      item.setAttribute('hidden', true);
+      item.style.display="none";
    });
 }
 
 function showContent(element, content) {
-   element.querySelector(content).removeAttribute('hidden');
+   element.querySelector(content).style.display="block";
 }
+
+
 

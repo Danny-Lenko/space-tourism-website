@@ -572,9 +572,67 @@ select {
   grid-area: article;
 
 }
+
+/* technology page */
+
+.technology-body {
+  background-image: url(./assets/technology/background-technology-mobile.jpg);
+}
+@media (min-width: 35rem) {
+  .technology-body {
+      background-position: center center;
+      background-image: url(./assets/technology/background-technology-tablet.jpg);
+  }
+}
+@media (min-width: 45rem) {
+  .technology-body {
+      background-image: url(./assets/technology/background-technology-desktop.jpg);
+  }
+} 
+
+.grid-container--technology {
+  display: grid;
+  --flow-space: 2rem;
+  grid-template-areas: 
+      'title'
+      'img'
+      'tabs'
+      'article';
+  margin-bottom: 4rem;
+  justify-items: center;
+  text-align: center;
+}
+.grid-container--technology > .img {
+  grid-area: img;
+  width: 100vw;
+}
+.grid-container--technology > .sect-title {
+  grid-area: title;
+}
+.grid-container--technology > .dot-indicators {
+  grid-area: tabs;
+}
+.grid-container--technology > .technology__article {
+  grid-area: article;
+  margin-top: 3rem;
+}
+.technology__article > * {
+  max-width: 50ch;
+}
+.img--tech-big {
+  display: none;
+}
+
+
+
+
+
 .img > img {
   width: 100%;
 }
+
+/*_______ layout media queries ________*/
+
 @media (min-width: 560px) {
   /* destination page queries */
   .destination-body {
@@ -641,10 +699,10 @@ select {
         '. article img .'
         '. tabs img .';
   }
-.grid-container--crew > .img {
-    grid-column: span 2;
-    align-self: end; 
-    max-width: 60%;
+  .grid-container--crew > .img {
+      grid-column: span 2;
+      align-self: end; 
+      max-width: 60%;
   }
   .grid-container--crew * {
     max-width: 100%;
@@ -653,6 +711,35 @@ select {
     height: 385px;
     object-fit: cover;
   }
+
+  /* technology page queries */
+
+  .grid-container--technology {
+    align-content: start;
+    grid-template-columns: minmax(3rem, 1fr) minmax(0, 10rem) minmax(0, 180rem) minmax(0, 60rem);
+    justify-items: start;
+    grid-template-areas: 
+        '. title title .'
+        '. tabs article img'
+  }
+
+  .img--tech-small {
+    display: none;
+  }
+  .img--tech-big {
+    display: block;
+    max-width: 30vw;
+    object-fit: cover;
+    justify-self: end;
+  }
+  .grid-container--technology > .dot-indicators {
+    flex-direction: column;
+    border: 1px solid yellowgreen;
+    align-self: center;
+    justify-self: end;
+    height: fit-content;
+  }
+  
 
 }
 

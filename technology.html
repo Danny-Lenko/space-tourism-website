@@ -10,7 +10,7 @@
     <script src="tabs.js" defer></script>
   </head>
   
-  <body class="crew-body">
+  <body class="technology-body">
     <a class="skip-to-content" href="#main">Skip to content</a>
   
     <header class="header flex">
@@ -27,23 +27,42 @@
         </ul>
       </nav>
     </header>
+
+    <main id="main" class="destination grid-container--technology flow" style="--flow-space: 4rem; --container-gap: 1rem">
+      <h2 class="sect-title" style="font-size: var(--fs-sect-title); padding: 0 2rem;"><span aria-hidden="true">03</span> Space launch 101</h2>
+
+      <div class="img img--tech-small" role="tabimg" id="moon-img">
+        <img src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="rocket launch">
+      </div>
+      <div class="img img--tech-big" role="tabimg" id="moon-img">
+        <img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="rocket launch">
+      </div>
+      
+
+      <div class="dot-indicators nmbr-mod flex">
+        <button aria-selected="true" class="ff-bel fs-32 bg-dark txt-white">1</button>
+        <button aria-selected="false" class="ff-bel fs-32 bg-dark txt-white">2</button>
+        <button aria-selected="false" class="ff-bel fs-32 bg-dark txt-white">3</button>
+      </div>
+
+      <article class="technology__article flow" id="moon-tab" tabindex="0" role="tabpanel" style="align-self: start; padding: 0 2rem;">
+        <p class="fs-16 ff-bar-con txt-light uppercase let-spacing-1" style="margin: 0 auto;">The terminology...</p>
+        <p class="fs-56 ff-bel uppercase" style="margin-top: 1rem">Launch vehicle</p>
+        <p class="line-hei1 txt-light">
+          A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+          payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+          WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+          it's quite an awe-inspiring sight on the launch pad!</p>
+      </article>
+
+
     
-    03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Launch vehicle
-
-  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-  it's quite an awe-inspiring sight on the launch pad!
+    </main>
+  
 
 
-  The terminology...
+
+  <!-- The terminology...
   Spaceport
 
   A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
@@ -58,6 +77,6 @@
   A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
   capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
   you'll spend your time during the flight. It includes a space gym, cinema, 
-  and plenty of other activities to keep you entertained.
+  and plenty of other activities to keep you entertained. -->
 </body>
 </html>

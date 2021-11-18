@@ -23,9 +23,7 @@
 - CSS Grid
 - Mobile-first workflow
 - CSS utility classes
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+
 
 ### What I learned
 
@@ -270,9 +268,11 @@ function changeTabPanel(e) {
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Github - [DannyLenk](https://github.com/DannyLenk)
+- Frontend Mentor - [@DannyLenk](https://www.frontendmentor.io/profile/DannyLenk)
+- Facebook - [Valerii Danylenko](https://www.facebook.com/valerii.danylenko)
+- LinkedIn - [Valerii Danylenko](https://www.linkedin.com/in/valerii-danylenko-74379212b)
+- insta - [valeriidanylenko](https://www.instagram.com/valeriidanylenko/?hl=ru)
 
 ## Acknowledgments
 

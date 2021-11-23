@@ -672,7 +672,8 @@ select {
     margin-bottom: 0;
   }
   .grid-container--crew > .img {
-    border-bottom: 0; 
+    border-bottom: 0;
+  }
 }
 
 @media (min-width: 820px) {
@@ -763,4 +764,3 @@ select {
     align-self: center;
   }
 }
-

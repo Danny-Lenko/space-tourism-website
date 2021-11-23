@@ -348,7 +348,7 @@ select {
 }
 
 .header {
-  margin: 2rem 0 0;
+  margin: 2rem 0 2rem;
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -471,8 +471,9 @@ select {
 ===================== */
 
 /* home page */
+
 .space {
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
   align-items: end;
 }
 .home {
@@ -643,7 +644,7 @@ select {
   width: 100%;
 }
 
-/*_______ layout media queries ________*/
+/*________ layout media queries ________*/
 
 @media (min-width: 560px) {
   /* destination page queries */
@@ -686,7 +687,6 @@ select {
     --gap: 7vw;
   }
   .grid-container--destination {
-    margin-top: 2rem;
     grid-template-areas: 
         '. title title .'
         '. img tabs .'
@@ -703,9 +703,9 @@ select {
   /* crew page queries */
 
   .grid-container--crew {
-    align-content: start;
+    align-content: end;
     grid-template-columns: minmax(3rem, 1fr) minmax(0, 70rem) minmax(0, 50rem) minmax(1rem, 3fr);
-    justify-items: start;
+    justify-items: center;
     grid-template-areas: 
         '. title title .'
         '. article img .'
@@ -714,7 +714,7 @@ select {
   .grid-container--crew > .img {
       grid-column: span 2;
       align-self: end; 
-      max-width: 60%;
+      max-width: 60vw;
   }
   .grid-container--crew * {
     max-width: 100%;
@@ -728,7 +728,7 @@ select {
 
   .grid-container--technology {
     align-content: start;
-    grid-template-columns: minmax(3rem, 1fr) minmax(10rem, 20rem) minmax(40rem, 70rem) minmax(30rem, 1fr);
+    grid-template-columns: minmax(3rem, 1fr) minmax(10rem, 20rem) minmax(40rem, 70rem) minmax(30rem, 5fr);
     justify-items: end;
     justify-content: flex-end;
     grid-template-areas: 

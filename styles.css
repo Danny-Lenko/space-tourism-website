@@ -775,7 +775,7 @@ select {
   z-index: 100;
 }
 #github-link i {
-  font-size: 3rem;
+  font-size: 5rem;
   color: white;
   animation: bounce 2s ease-in-out 3;
 }
